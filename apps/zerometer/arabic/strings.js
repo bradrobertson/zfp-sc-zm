@@ -1,4 +1,4 @@
-SC.stringsFor("ar", {
-  "hello": 'مرحبا',
-  "world": 'العالم'
-});
+// SC.stringsFor("ar", {
+//   "hello": 'مرحبا',
+//   "world": 'العالم'
+// });

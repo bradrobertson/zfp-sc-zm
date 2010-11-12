@@ -1,0 +1,44 @@
+@theme(sc-jumbo-size)
+
+@view(sc-slider-view) {
+  overflow:visible;
+  .sc-track {
+    position: absolute;
+    top: 50%; height: 7px; left: 0px; right: 0px;
+    margin-top: -3px;
+    
+    .sc-left {
+      left: 0px; width: 2px; top: 0px; height: 7px;
+      display: block; position: absolute;
+      background: sprite("track.png" [0 2]);
+    }
+    
+    .sc-middle {
+      left: 2px; right: 2px; top: 0px; height: 7px;
+      display: block; position: absolute;
+      background: sprite("track.png" repeat-x [2, 1]);
+    }
+    
+    .sc-right {
+      right: 0px; width: 2px; top: 0px; height: 7px;
+      display: block; position: absolute;
+      background: sprite("track.png" [-2]);
+    }
+  }
+  
+  .sc-handle {
+    display: block; position: absolute;
+    width: 21px; height: 23px; top: 50%; margin-top: -11px;
+    background: sprite("knob.png");
+  }
+  
+}
+
+@view(sc-slider-view).active {
+  .sc-handle {
+    background: sprite("knob_focus.png");    
+  }
+}
+
+
+@end

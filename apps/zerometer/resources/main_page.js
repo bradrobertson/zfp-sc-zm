@@ -11,21 +11,21 @@ Zerometer.mainPage = SC.Page.design({
   // Add childViews to this pane for views to display immediately on page 
   // load.
   mainPane: SC.MainPane.design({
-    childViews: 'header iFrameView localIframeView'.w(),
+    childViews: 'header iFrameView'.w(),
     
 		header: SC.ToolbarView.design({
 			childViews: 'b1 b2'.w(),
-			layout: {top:0, left:0, right:0, height:40},
+			layout: { top:0, left:0, right:0, height:40 },
 			anchorLocation: SC.ANCHOR_TOP,
 			
 			b1: SC.LabelView.design({
-				layout:{ top:10, left:0, width:100, height:20},
-				value: "Some Label"
+				layout:{ top:10, left:0, width:100, height:20 },
+				value: "hello".loc()
 			}),
 			
 			b2: SC.ButtonView.design({
-				layout:{ top:10, left:110, width:100, height:20},
-				title: "Some Button"
+				layout:{ top:10, left:110, width:100, height:20 },
+				title: "world".loc()
 			})
 		}),
 

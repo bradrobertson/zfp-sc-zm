@@ -1,9 +1,14 @@
 .sc-main {
-  background: #fff url(body.png) repeat-x top left;
   height: 100%;
   font-family: Helvetica, sans-serif;
-}
-
-.sc-view {
-  font-family: Helvetica, sans-serif;
+	}
+	.zf-bg{
+		background: #fff sprite(body.png repeat-x [0,1]);
+		height:300px;		
+	}
+	.sc-view.zf-bg{
+		z-index:1;
+	}
+.sc-view{
+	z-index:100;
 }

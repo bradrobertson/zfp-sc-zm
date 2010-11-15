@@ -1700,5 +1700,6 @@ img.disclosure.button.closed.active { background: static_url("images/1.png") no-
   -webkit-border-radius: 10px;
   border-radius: 10px;
   border: 1px solid #999999;
+  behavior: url('/static/zerometer/en/current/pie.htc');
 }
 .sc-toolbar-view { background: transparent; }

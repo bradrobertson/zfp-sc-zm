@@ -3,4 +3,5 @@
 	-webkit-border-radius:10px;
 	border-radius:10px;
 	border:1px solid #999;
+	behavior: url('/static/zerometer/en/current/pie.htc');	/* For IE < 9 css3 features */
 }
